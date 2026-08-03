@@ -128,3 +128,9 @@
      # stop
      $ kill $(cat tmp/pids/server.pid)
    #+END_SRC
+
+* Dump nomnichi
+  To dump Article files to dump/articles
+  #+begin_src sh
+    $ bundle exec rails runner runner/dump_to_files.rb
+  #+end_src
